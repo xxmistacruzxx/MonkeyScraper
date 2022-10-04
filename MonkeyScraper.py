@@ -74,11 +74,12 @@ class Scraper:
 
 def main():
     print("MonkeyScraper.py main function")
-    test = Scraper(["NjMzOWZlMmE3ZDIxZDlhODgwMGE0Y2FlLmlhRzl5Y2c4TnluR3JNdDQyd0FIYUtBRjgxNkc4NWZQ"], "english", "time", "15")
-    # test.scrape("NjMzOWZlMmE3ZDIxZDlhODgwMGE0Y2FlLmlhRzl5Y2c4TnluR3JNdDQyd0FIYUtBRjgxNkc4NWZQ", 299, 0, 50, True)
-    test.multiThreadedScrapeFinite(100, "rank")
-    with open("sample.json", "w") as outfile:
-        json.dump(test.getData(), outfile)
+    ## TESTING OF MONKEYSCRAPER FUNCTIONS
+    # test = Scraper(MonkeyType.keysFromTextFileToList(), "english", "time", "15")
+    # test.scrapeFinite(test.apekeys[0], 299, 0, 50, True)
+    # test.multiThreadedScrapeFinite(100, "rank")
+    # with open("sample.json", "w") as outfile:
+        # json.dump(test.getData(), outfile)
 
 if __name__ == "__main__":
     main()
